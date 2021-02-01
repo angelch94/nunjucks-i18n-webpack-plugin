@@ -43,7 +43,7 @@ class NunjucksI18nWebpackPlugin {
     // setup hooks for webpack 4
     if (compiler.hooks) {
       compiler.hooks.compilation.tap('NjkWebpackPluginHooks', compilation => {
-        const AsyncSeriesWaterfallHook = require('nunjucks-i18n-webpack-plugin/src/node_modules/tapable').AsyncSeriesWaterfallHook;
+        const AsyncSeriesWaterfallHook = require('tapable').AsyncSeriesWaterfallHook;
         compilation.hooks.njkWebpackPluginBeforeHtmlProcessing = new AsyncSeriesWaterfallHook(['pluginArgs']);
       });
     }
