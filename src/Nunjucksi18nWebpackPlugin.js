@@ -1,9 +1,9 @@
 "use strict";
 
-const fs = require("nunjucks-i18n-webpack-plugin/src/node_modules/fs-extra");
+const fs = require("fs-extra");
 const path = require("path");
-const nunjucks = require("nunjucks-i18n-webpack-plugin/src/node_modules/nunjucks");
-const objToString = require("nunjucks-i18n-webpack-plugin/src/objToString")
+const nunjucks = require("nunjucks");
+const objToString = require("./objToString")
 const pluginName = "NunjucksI18nWebpackPlugin";
 
 class NunjucksI18nWebpackPlugin {
