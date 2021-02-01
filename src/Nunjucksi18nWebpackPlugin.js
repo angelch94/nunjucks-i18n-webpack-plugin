@@ -106,7 +106,6 @@ class NunjucksI18nWebpackPlugin {
           (matche, $1, $2, $3) => {
             const language = template.language
             const json = require(language)
-            console.log(json)
             const key = $1.trim();
             const val = json[key]
             if (!key || val === false) {
